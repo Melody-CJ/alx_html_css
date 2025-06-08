@@ -2,6 +2,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,8 +15,19 @@ body {
 
 header {
   /* Optional: set a fixed height */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   min-height: 60px;
-  padding: 1em;
+  align-items: center;     /* Optional: vertically centers the items */
+  gap: 1em;                /* Optional: adds horizontal spacing between items */
+  list-style: none;        /* Optional: removes the default bullet points */
+  padding: 0;              /* Optional: removes default padding */
+  margin: 0;   
+  /*padding: 1em;*/
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #4a90e2, #357ABD);
+  color: white;
 }
 
 main {
@@ -28,6 +42,10 @@ article {
   overflow-y: auto; /* Enable vertical scrolling if needed */
   padding: 1em;
   min-width: 0; /* Prevent overflow issues */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5em;
 }
 
 aside {
