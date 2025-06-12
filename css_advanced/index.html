@@ -4,77 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmileSchool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
    <header>
-    <a href="">
-        <img src="Images/logo.svg" alt="site logo">
-        <div>
-            <ul>
-                <li><a href="">Courses</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Login</a></li>
-            </ul>
-           
-        </div>
-    </a>
+    <img src="Images/logo.svg" alt="site logo">
+    <nav id="navigation">
+             <a href="#">COURSES</a>
+             <a href="#">PRICING</a>
+             <a href="#">LOGIN</a>
+    </nav>
    </header>
    <main>
-    <section>
+    <section class="hero">
         <div>
             <h1>Get Schooled</h1>
-            <span>Smiles</span> 
-               <span>Grin</span>  
-                <span>Laugh</span>
-            <button>Register for free</button>
+            <p class="keywords"> SMILE &nbsp;&nbsp;&nbsp; GRIN &nbsp;&nbsp;&nbsp; LAUGH </p>
+            <button class="cta-button">REGISTER FOR FREE</button>
         </div>
-            <div>
-                <h3>Learn from the Pros</h3>
-                <div>
+        <div id="learn">
+        <h3 class="Learn"><span>Learn </span>from the Pros</h3> </div>
+            <div class="Tutors">
+                
+                <div class="tutor">
                     <img src="Images/Tutor 1.png" alt="Tutor 1">
                     <h4>Phillip Massey</h4>
-                    <p>« Smile of the year » 2018 - 2019</p>
+                    <p>« Smile of the year » <br> 2018 - 2019</p>
                 </div>
-                <div>
+                <div class="tutor">
                     <img src="Images/Tutor 2.png" alt="Tutor 2">
                     <h4>Nannie Lawrence</h4>
-                    <p>Best « little smile » 2017</p>
+                    <p>Best « little smile » <br> 2017</p>
                 </div>
-                <div>
+                <div class="tutor">
                     <img src="Images/Tutor 3.png" alt="Tutor 3">
                     <h4>Bruce Walters</h4>
-                    <p>Best « Friend Smile » live performance 2019</p>
+                    <p>Best « Friend Smile » <br> live performance 2019</p>
                 </div>
-                <div>
+                <div class="tutor">
                     <img src="Images/Tutor 4.png" alt="Tutor 4">
                     <h4>Henry Hughes</h4>
-                    <p>« 24h smiles » winner 2016 - 2019</p>
+                    <p>« 24h smiles » winner <br> 2016 - 2019</p>
                 </div>
 
             </div>
     </section>
     <!--Qoute -->
-        <section>
-            <div>
-                <img src="Images/Bitmap.png" alt="Author Image">
-                <div>
-                    <blockquote>"Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!"</blockquote>
-                    <p><strong>Peter Drucker</strong></p>
-                    <p>weather presenter</p>
-                </div>
+        <section class="quote">
+            <div class="quote-container">
+                <img class="quote-logo" src="Images/Bitmap.png" alt="Author Image">
+                
+                    <blockquote class="quote-text">"Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!"</blockquote>
+                    <p class="quote-name"><strong>Peter Drucker</strong></p>
+                    <p class="quote-title">weather presenter</p>
+                
             </div>
         </section>
         <!--video section-->
-        <section>
-            <h3>Most popular tutorials</h3>
-        <div>
+        <section class="tutorials">
+            <h3 class="video-header">Most <span class="Learn">Popular</span> tutorials</h3>
+        <div class="tutorial-cards">
             <div>
                 <img src="Images/Group 1.png" width="200" height="200" alt="Thumbnail 1">
                 <h3>Diagonal Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <p>Lorem ipsum dolor sit amet,<br> consect adipiscing elit, <br> sed do eiusmod.</p>
            
-                <div>
-                 <img>
+                <div class="card-footer">
+                 <img src="Images/1.png" alt="Phillip Massey" class="avatar">
                     <h3>Phillip Massey</h3>
                 </div>
             <div>
@@ -84,54 +82,15 @@
                 <img src="Images/Star_2.svg" alt="Ratings">
                 <img src="Images/Star_2.svg" alt="Ratings">
                 <img src="Images/Star_5.svg" alt="Ratings">
+                <span class="duration">8 min</span>
               </div>
-                <p>4.0 out of 5</p>
+                
               </div>
              </div>
             <div>
                 <img src="Images/Group 2.png" width="200" height="200" alt="Thumbnail 2">
                 <h3>Sad Smile</h3>
-                <p>The best way to predict the future is to create it</p>
-           
-                <div>
-                 <img>
-                    <h3>Phillip Massey</h3>
-                </div>
-            <div>
-             <div>
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_5.svg" alt="Ratings">
-              </div>
-                <p>4.0 out of 5</p>
-              </div>
-             </div>
-            <div>
-                <img src="Images/Group 3.png" width="200" height="200" alt="Thumbnail 3">
-                <h3>Natural Smile</h3>
-                <p>The best way to predict the future is to create it</p>
-           
-                <div>
-                 <img>
-                    <h3>Phillip Massey</h3>
-                </div>
-            <div>
-             <div>
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_2.svg" alt="Ratings">
-                <img src="Images/Star_5.svg" alt="Ratings">
-              </div>
-                <p>4.0 out of 5</p>
-              </div>
-             </div>
-            <div>
-                <img src="Images/Group 4.png" width="200" height="200" alt="Thumbnail 4">
-                <h3>Happy Smile</h3>
-                <p>The best way to predict the future is to create it</p>
+                <p>Lorem ipsum dolor sit amet,<br> consect adipiscing elit, <br> sed do eiusmod.</p>
            
                 <div>
                  <img src="Images/1.png">
@@ -144,46 +103,89 @@
                 <img src="Images/Star_2.svg" alt="Ratings">
                 <img src="Images/Star_2.svg" alt="Ratings">
                 <img src="Images/Star_5.svg" alt="Ratings">
+                <span class="duration">8 min</span>
               </div>
-                <p>4.0 out of 5</p>
+                
+              </div>
+             </div>
+            <div>
+                <img src="Images/Group 3.png" width="200" height="200" alt="Thumbnail 3">
+                <h3>Natural Smile</h3>
+                <p>Lorem ipsum dolor sit amet,<br> consect adipiscing elit, <br> sed do eiusmod.</p>
+           
+                <div>
+                 <img src="Images/1.png">
+                    <h3>Phillip Massey</h3>
+                </div>
+            <div>
+             <div>
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_5.svg" alt="Ratings">
+                <span class="duration">8 min</span>
+              </div>
+               
+              </div>
+             </div>
+            <div>
+                <img src="Images/Group 4.png" width="200" height="200" alt="Thumbnail 4">
+                <h3>Happy Smile</h3>
+                <p>Lorem ipsum dolor sit amet,<br> consect adipiscing elit, <br> sed do eiusmod.</p>
+           
+                <div>
+                 <img src="Images/1.png">
+                    <h3>Phillip Massey</h3>
+                </div>
+            <div>
+             <div>
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_2.svg" alt="Ratings">
+                <img src="Images/Star_5.svg" alt="Ratings">
+                <span class="duration">8 min</span>
+              </div>
+               
               </div>
              </div>
         </div>
         </section>
        
         <!--membership section-->
-        <section>
-            <h3>Free membership</h3>
-            <div>
-        <div>
+        <section class="membership">
+            <h3><span class="highlight">Free </span>membership</h3>
+            <div class="benefits">
+        <div class="benefit">
              <img src="Images/smile.svg" alt="an image">
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div>
+        <div class="benefit">
              <img src="Images/smile.svg" alt="an image">
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div>
+        <div class="benefit">
              <img src="Images/smile.svg" alt="an image">
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div>
+        <div class="benefit">
              <img src="Images/smile.svg" alt="an image">
                     <h4>Lorem ipsum</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        
-         <button>Register for free</button>
-            </div>
+         </div>
+         <button class="register-btn">REGISTER FOR FREE</button>
+           
         </section>
        <!--FAQ section-->
-        <section>
-  <h2>F.A.Q.</h2>
+        <section class="FAQ-block">
+  <h2 class="faq">F.A.Q.</h2>
   
-  <div>
+  <div class="Row-Block1">
     <!-- Row Block 1 -->
     <div>
       <!-- Item Block 1 -->
@@ -198,9 +200,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-
+      
     <!-- Row Block 2 -->
-    <div>
+    <div class="Row-Block2">
       <!-- Item Block 3 -->
       <div>
         <h3>How does this work?</h3>
@@ -217,15 +219,16 @@
 </section>
    </main>
    <footer>
-    <div>
+    <div class="icon1">
         <img src="Images/logo.svg">
-        <div>
-            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <img src="Images/facebook.svg" width="200" height="200"alt="facebook logo"> </a>
-            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <img src="Images/instagram.svg" width="200" height="200" alt="instagram logo"> </a>
-            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <img src="Images/twitter-alt-circle.svg" width="200" height="200" alt="Twitter logo"> </a>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com/in/melody-arinze" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a>
         </div>
-        <p>&copy; 2025 SmileSchool. All rights reserved</p>
+        
     </div>
+    <p class="copy">&copy; 2025 SmileSchool. All rights reserved</p>
    </footer>
 </body>
 </html>
