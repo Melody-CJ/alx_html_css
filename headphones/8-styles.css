@@ -46,6 +46,48 @@ header nav a {
   text-decoration: none;
   margin-left: 40px;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #ec204f;
+    cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+  }
+
+  #navigation a {
+    padding: 1rem;
+    display: block;
+    border-top: 1px solid #333;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
 }
 
 .hero{
@@ -63,13 +105,14 @@ header nav a {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
+  padding-top: 50px;
 }
 
 .hero p {
   font-size: 18px;
   letter-spacing: 2px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .hero .cta-button {
@@ -86,7 +129,7 @@ header nav a {
 }
 
 .cta-button:hover {
-  background-color: #ae2a4b;
+  background-color: #6d1c30;
 }
 
 .what-we-do{
@@ -114,32 +157,57 @@ header nav a {
   background-size: cover;
   position: relative;
   text-align: center;
+  padding-top: 40px;
 }
 
-h2{
-    padding: 40px;
-}
-.pentagon-div{
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 80px;
-}
-.pentagon {
-  width: 100px;
-  height: 100px;
-  background: url('images/pentagone.png') no-repeat center/contain;
+.pentagon-div {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 2rem;
+}
+
+.pentagon-hero {
+  text-align: center;
+  color: white;
+  max-width: 150px;
+}
+
+.pentagon {
+  background-color: #ec204f;
+  width: 140px;
+  height: 140px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
 }
+
+.pentagon .percent {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.pentagon .description {
+  font-size: 12px;
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
 
 .form-section{
     background-color: white;
     color: #000;
+    padding-top: 40px;
     /* text-align: center; */
 }
 .contact-form {
@@ -231,54 +299,39 @@ footer {
   line-height: 1.6;
 }
 
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  #navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  #navigation a {
-    margin: 10px 0;
-  }
-
-  .categories {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .pentagon-div {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .hero h1, .hero p, .second-hero h2, .second-hero p {
-    padding: 0 20px;
-    font-size: 90%;
-  }
-
-  .we-do {
-    padding: 20px;
-  }
-
-  .contact-form {
-    padding: 0 1rem;
-  }
-
-  .icon {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Animate What We Do icons */
+.categories .sound,
+.categories .clip,
+.categories .music,
+.categories .listen {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+.categories .sound:hover,
+.categories .clip:hover,
+.categories .music:hover,
+.categories .listen:hover {
+  transform: scale(1.1) rotate(-2deg);
+  opacity: 0.9;
+}
+
+
+/* Animate Our Results pentagons */
+.pentagon-hero {
+  transition: transform 0.3s ease;
+}
+
+.pentagon-hero:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.pentagon-hero:hover {
+  animation: bounce 0.6s ease;
+}
+
 
